@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Almira Clan Landing Page</title>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        overflow-x: hidden;
+    }
+
+    /* Full page container using image */
+    .landing-container {
+        width: 100%;
+        height: 100vh;
+        background: url("P1_CLAN.PNG") no-repeat center center;
+        background-size: contain;
+        background-color: #0d5b66; /* fallback color */
+        position: relative;
+    }
+
+    /* Transparent clickable button with hover glow */
+	.info-buttonP2 {
+		position: absolute;
+		right: 50.5%;           /* adjust horizontal position */
+		bottom: 5%;          /* adjust vertical position */
+		width: 130px;         /* rectangle width */
+		height: 50px;         /* rectangle height */
+		background: transparent;  /* yellow button */
+		border: none;
+		border-radius: 0;     /* rectangle shape */
+		cursor: pointer;
+		transition: 0.3s ease-in-out;
+	}
+
+	/* Hover glow */
+	.info-buttonP2:hover {
+		box-shadow: 0 0 20px 5px rgba(255, 215, 0, 0.8); /* yellow glow */
+		transform: scale(1.05); /* slight grow effect */
+	}
+
+	/* Click effect */
+	.info-buttonP2:active {
+		transform: scale(0.95);
+		box-shadow: 0 0 25px 8px rgba(255, 76, 216, 1);
+	}
+	
+	.info-buttonP3 {
+		position: absolute;
+		right: 41%;           /* adjust horizontal position */
+		bottom: 5%;          /* adjust vertical position */
+		width: 122px;         /* rectangle width */
+		height: 50px;         /* rectangle height */
+		background: transparent;  /* yellow button */
+		border: none;
+		border-radius: 0;     /* rectangle shape */
+		cursor: pointer;
+		transition: 0.3s ease-in-out;
+	}
+
+	/* Hover glow */
+	.info-buttonP3:hover {
+		box-shadow: 0 0 20px 5px rgba(255, 215, 0, 0.8); /* yellow glow */
+		transform: scale(1.05); /* slight grow effect */
+	}
+
+	/* Click effect */
+	.info-buttonP3:active {
+		transform: scale(0.95);
+		box-shadow: 0 0 25px 8px rgba(255, 76, 216, 1);
+	}
+	
+	.info-buttonP4 {
+		position: absolute;
+		right: 33.5%;           /* adjust horizontal position */
+		bottom: 5%;          /* adjust vertical position */
+		width: 90px;         /* rectangle width */
+		height: 50px;         /* rectangle height */
+		background: transparent;  /* yellow button */
+		border: none;
+		border-radius: 0;     /* rectangle shape */
+		cursor: pointer;
+		transition: 0.3s ease-in-out;
+	}
+
+	/* Hover glow */
+	.info-buttonP4:hover {
+		box-shadow: 0 0 20px 5px rgba(255, 215, 0, 0.8); /* yellow glow */
+		transform: scale(1.05); /* slight grow effect */
+	}
+
+	/* Click effect */
+	.info-buttonP4:active {
+		transform: scale(0.95);
+		box-shadow: 0 0 25px 8px rgba(255, 76, 216, 1);
+	}
+	
+	.info-buttonP5 {
+		position: absolute;
+		right: 26.5%;           /* adjust horizontal position */
+		bottom: 5%;          /* adjust vertical position */
+		width: 85px;         /* rectangle width */
+		height: 50px;         /* rectangle height */
+		background: transparent;  /* yellow button */
+		border: none;
+		border-radius: 0;     /* rectangle shape */
+		cursor: pointer;
+		transition: 0.3s ease-in-out;
+	}
+
+	/* Hover glow */
+	.info-buttonP5:hover {
+		box-shadow: 0 0 20px 5px rgba(255, 215, 0, 0.8); /* yellow glow */
+		transform: scale(1.05); /* slight grow effect */
+	}
+
+	/* Click effect */
+	.info-buttonP5:active {
+		transform: scale(0.95);
+		box-shadow: 0 0 25px 8px rgba(255, 76, 216, 1);
+	}
+
+.info-buttonP6 {
+		position: absolute;
+		right: 20%;           /* adjust horizontal position */
+		bottom: 5%;          /* adjust vertical position */
+		width: 75px;         /* rectangle width */
+		height: 50px;         /* rectangle height */
+		background: transparent;  /* yellow button */
+		border: none;
+		border-radius: 0;     /* rectangle shape */
+		cursor: pointer;
+		transition: 0.3s ease-in-out;
+	}
+
+	/* Hover glow */
+	.info-buttonP6:hover {
+		box-shadow: 0 0 20px 5px rgba(255, 215, 0, 0.8); /* yellow glow */
+		transform: scale(1.05); /* slight grow effect */
+	}
+
+	/* Click effect */
+	.info-buttonP6:active {
+		transform: scale(0.95);
+		box-shadow: 0 0 25px 8px rgba(255, 76, 216, 1);
+	}
+	
+    .info-button {
+        position: absolute;
+        right: 23%; /* adjust horizontal position */
+        bottom: 42%; /* adjust vertical position */
+        width: 90px;  /* size of clickable area */
+        height: 90px;
+        background: transparent; /* fully invisible */
+        border: none;
+        border-radius: 50%; /* circular clickable area */
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+    }
+
+    /* Hover glow */
+    .info-button:hover {
+        box-shadow: 0 0 20px 5px rgba(255, 76, 216, 0.7); /* pink glow */
+        transform: scale(1.05); /* optional slight grow effect */
+    }
+
+    /* Click effect */
+    .info-button:active {
+        transform: scale(0.95);
+        box-shadow: 0 0 25px 8px rgba(255, 76, 216, 1);
+    }
+	
+	.info-buttonC {
+        position: absolute;
+        right: 65.5%; /* adjust horizontal position */
+        bottom: 91%; /* adjust vertical position */
+        width: 50px;  /* size of clickable area */
+        height: 50px;
+        background: transparent; /* fully invisible */
+        border: none;
+        border-radius: 50%; /* circular clickable area */
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+    }
+
+    /* Hover glow */
+    .info-buttonC:hover {
+        box-shadow: 0 0 20px 5px rgba(255, 215, 0, 0.8); /* yellow glow */
+        transform: scale(1.05); /* optional slight grow effect */
+    }
+
+    /* Click effect */
+    .info-buttonC:active {
+        transform: scale(0.95);
+        box-shadow: 0 0 25px 8px rgba(255, 76, 216, 1);
+    }
+
+    /* Mobile adjustments */
+    @media (max-width: 768px) {
+        .info-button {
+            right: 50%;
+            transform: translateX(50%);
+            bottom: 10%;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="landing-container">
+    <!-- Transparent clickable button with glow on hover -->
+	<button class="info-buttonC" onclick="window.location.href='P1_CLAN.html';" title="Click!"></button>
+	<button class="info-buttonP2" onclick="window.location.href='P2_IDENTITY.html';" title="Click!"></button>
+	<button class="info-buttonP3" onclick="window.location.href='P3_NEWS.html';" title="Click!"></button>
+	<button class="info-buttonP4" onclick="window.location.href='P4_FAQs.html';" title="Click!"></button>
+	<button class="info-buttonP5" onclick="window.location.href='P5_FEEDBACK.html';" title="Click!"></button>
+    <button class="info-buttonP6" onclick="window.location.href='P6_FORMS.html';" title="Click!"></button>
+</div>
+
+</body>
+</html>
