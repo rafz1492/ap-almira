@@ -23,66 +23,177 @@
         position: relative;
     }
 
-    /* Common styles for all buttons */
-    .landing-container button {
+    /* Transparent clickable button with hover glow */
+	.info-buttonP2 {
+		position: absolute;
+		right: 50.5%;           /* adjust horizontal position */
+		bottom: 5%;          /* adjust vertical position */
+		width: 130px;         /* rectangle width */
+		height: 50px;         /* rectangle height */
+		background: transparent;  /* yellow button */
+		border: none;
+		border-radius: 0;     /* rectangle shape */
+		cursor: pointer;
+		transition: 0.3s ease-in-out;
+	}
+
+	/* Hover glow */
+	.info-buttonP2:hover {
+		box-shadow: 0 0 20px 5px rgba(255, 215, 0, 0.8); /* yellow glow */
+		transform: scale(1.05); /* slight grow effect */
+	}
+
+	/* Click effect */
+	.info-buttonP2:active {
+		transform: scale(0.95);
+		box-shadow: 0 0 25px 8px rgba(255, 76, 216, 1);
+	}
+	
+	.info-buttonP3 {
+		position: absolute;
+		right: 41%;           /* adjust horizontal position */
+		bottom: 5%;          /* adjust vertical position */
+		width: 122px;         /* rectangle width */
+		height: 50px;         /* rectangle height */
+		background: transparent;  /* yellow button */
+		border: none;
+		border-radius: 0;     /* rectangle shape */
+		cursor: pointer;
+		transition: 0.3s ease-in-out;
+	}
+
+	/* Hover glow */
+	.info-buttonP3:hover {
+		box-shadow: 0 0 20px 5px rgba(255, 215, 0, 0.8); /* yellow glow */
+		transform: scale(1.05); /* slight grow effect */
+	}
+
+	/* Click effect */
+	.info-buttonP3:active {
+		transform: scale(0.95);
+		box-shadow: 0 0 25px 8px rgba(255, 76, 216, 1);
+	}
+	
+	.info-buttonP4 {
+		position: absolute;
+		right: 33.5%;           /* adjust horizontal position */
+		bottom: 5%;          /* adjust vertical position */
+		width: 90px;         /* rectangle width */
+		height: 50px;         /* rectangle height */
+		background: transparent;  /* yellow button */
+		border: none;
+		border-radius: 0;     /* rectangle shape */
+		cursor: pointer;
+		transition: 0.3s ease-in-out;
+	}
+
+	/* Hover glow */
+	.info-buttonP4:hover {
+		box-shadow: 0 0 20px 5px rgba(255, 215, 0, 0.8); /* yellow glow */
+		transform: scale(1.05); /* slight grow effect */
+	}
+
+	/* Click effect */
+	.info-buttonP4:active {
+		transform: scale(0.95);
+		box-shadow: 0 0 25px 8px rgba(255, 76, 216, 1);
+	}
+	
+	.info-buttonP5 {
+		position: absolute;
+		right: 26.5%;           /* adjust horizontal position */
+		bottom: 5%;          /* adjust vertical position */
+		width: 85px;         /* rectangle width */
+		height: 50px;         /* rectangle height */
+		background: transparent;  /* yellow button */
+		border: none;
+		border-radius: 0;     /* rectangle shape */
+		cursor: pointer;
+		transition: 0.3s ease-in-out;
+	}
+
+	/* Hover glow */
+	.info-buttonP5:hover {
+		box-shadow: 0 0 20px 5px rgba(255, 215, 0, 0.8); /* yellow glow */
+		transform: scale(1.05); /* slight grow effect */
+	}
+
+	/* Click effect */
+	.info-buttonP5:active {
+		transform: scale(0.95);
+		box-shadow: 0 0 25px 8px rgba(255, 76, 216, 1);
+	}
+
+.info-buttonP6 {
+		position: absolute;
+		right: 20%;           /* adjust horizontal position */
+		bottom: 5%;          /* adjust vertical position */
+		width: 75px;         /* rectangle width */
+		height: 50px;         /* rectangle height */
+		background: transparent;  /* yellow button */
+		border: none;
+		border-radius: 0;     /* rectangle shape */
+		cursor: pointer;
+		transition: 0.3s ease-in-out;
+	}
+
+	/* Hover glow */
+	.info-buttonP6:hover {
+		box-shadow: 0 0 20px 5px rgba(255, 215, 0, 0.8); /* yellow glow */
+		transform: scale(1.05); /* slight grow effect */
+	}
+
+	/* Click effect */
+	.info-buttonP6:active {
+		transform: scale(0.95);
+		box-shadow: 0 0 25px 8px rgba(255, 76, 216, 1);
+	}
+	
+    .info-button {
         position: absolute;
-        background: #FFD700;       /* yellow default */
+        right: 23%; /* adjust horizontal position */
+        bottom: 42%; /* adjust vertical position */
+        width: 90px;  /* size of clickable area */
+        height: 90px;
+        background: transparent; /* fully invisible */
         border: none;
-        border-radius: 0;          /* rectangle shape */
+        border-radius: 50%; /* circular clickable area */
         cursor: pointer;
         transition: 0.3s ease-in-out;
-        pointer-events: auto;      /* ensure clicks work */
-        touch-action: manipulation; /* mobile tap support */
-        -webkit-tap-highlight-color: rgba(0,0,0,0);
     }
 
-    /* Hover glow (desktop) */
-    .landing-container button:hover {
-        box-shadow: 0 0 20px 5px rgba(255, 215, 0, 0.8); /* yellow glow */
-        transform: scale(1.05);
+    /* Hover glow */
+    .info-button:hover {
+        box-shadow: 0 0 20px 5px rgba(255, 76, 216, 0.7); /* pink glow */
+        transform: scale(1.05); /* optional slight grow effect */
     }
 
     /* Click effect */
-    .landing-container button:active {
+    .info-button:active {
         transform: scale(0.95);
-        box-shadow: 0 0 25px 8px rgba(255, 215, 0, 1);
+        box-shadow: 0 0 25px 8px rgba(255, 76, 216, 1);
     }
-
-    /* Individual button positions and sizes */
-    .info-buttonP2 { right: 50.5%; bottom: 5%; width: 130px; height: 50px; }
-    .info-buttonP3 { right: 41%;   bottom: 5%; width: 122px; height: 50px; }
-    .info-buttonP4 { right: 33.5%; bottom: 5%; width: 90px;  height: 50px; }
-    .info-buttonP5 { right: 26.5%; bottom: 5%; width: 85px;  height: 50px; }
-    .info-buttonP6 { right: 20%;   bottom: 5%; width: 75px;  height: 50px; }
-    .info-button   { right: 23%;   bottom: 42%; width: 90px;  height: 90px; border-radius: 50%; background: #FFD700; }
 
     /* Mobile adjustments */
     @media (max-width: 768px) {
-        .landing-container button {
-            /* Slightly larger tap areas for mobile */
-            min-width: 48px;
-            min-height: 48px;
+        .info-button {
+            right: 50%;
+            transform: translateX(50%);
+            bottom: 10%;
         }
-
-        /* Optional: reposition for small screens if needed */
-        .info-button { right: 50%; transform: translateX(50%); bottom: 10%; }
-        .info-buttonP2 { right: 55%; bottom: 10%; }
-        .info-buttonP3 { right: 45%; bottom: 10%; }
-        .info-buttonP4 { right: 37%; bottom: 10%; }
-        .info-buttonP5 { right: 29%; bottom: 10%; }
-        .info-buttonP6 { right: 22%; bottom: 10%; }
     }
 </style>
 </head>
 <body>
 
 <div class="landing-container">
-    <button class="info-button"  onclick="window.location.href='P6_FORMS.html';"    title="Click!"></button>
-    <button class="info-buttonP2" onclick="window.location.href='P2_IDENTITY.html';" title="Click!"></button>
-    <button class="info-buttonP3" onclick="window.location.href='P3_NEWS.html';"     title="Click!"></button>
-    <button class="info-buttonP4" onclick="window.location.href='P4_FAQs.html';"     title="Click!"></button>
-    <button class="info-buttonP5" onclick="window.location.href='P5_FEEDBACK.html';" title="Click!"></button>
-    <button class="info-buttonP6" onclick="window.location.href='P6_FORMS.html';"    title="Click!"></button>
+    <!-- Transparent clickable button with glow on hover -->
+	<button class="info-button" onclick="window.location.href='P6_FORMS.html';" title="Click!"></button>
+	<button class="info-buttonP2" onclick="window.location.href='P2_IDENTITY.html';" title="Click!"></button>
+	<button class="info-buttonP3" onclick="window.location.href='P3_NEWS.html';" title="Click!"></button>
+	<button class="info-buttonP4" onclick="window.location.href='P4_FAQs.html';" title="Click!"></button>
+	<button class="info-buttonP5" onclick="window.location.href='P5_FEEDBACK.html';" title="Click!"></button>
+    <button class="info-buttonP6" onclick="window.location.href='P6_FORMS.html';" title="Click!"></button>
 </div>
 
 </body>
